@@ -11,5 +11,10 @@ export default {
         income: '#00C689',
         expense: '#EA4335',
 
+    },
+    fonts: {
+        regular: 'Roboto_400Regular',
+        medium: 'Roboto_500Medium',
+        bold: 'Roboto_700Bold'
     }
 }
