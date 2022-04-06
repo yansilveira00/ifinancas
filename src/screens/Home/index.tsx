@@ -12,7 +12,9 @@ import {
   UserGreeting,
   UserName,
   Icon,
+  HighlightCards,
 } from './styles';
+import { HighlightCard } from '../../components/HighlightCard';
 
 export function Home() {
   return (
@@ -23,7 +25,7 @@ export function Home() {
             <Photo source={{ uri: 'https://github.com/yansilveira00.png'}}/>
               <User>
                 <UserGreeting>Olá, </UserGreeting>
-                <UserName>Yan</UserName>
+                <UserName>Yan Silveira</UserName>
               </User>
         </UserInfo>
 
@@ -31,6 +33,12 @@ export function Home() {
 
         </ContentWrapper>
       </Header>
+
+      <HighlightCards>
+        <HighlightCard />
+        <HighlightCard />
+        <HighlightCard />
+      </HighlightCards>
     </Container>
   );
 }

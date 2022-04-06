@@ -8,8 +8,11 @@ export default {
         header: '#240784',
         background: '#FFFFFF',
 
+        incomeTitle: '#50A0A6',
         income: '#00C689',
+        valueCard: '#122029',
         expense: '#EA4335',
+        lastTransaction: '#5E5E92',
 
     },
     fonts: {

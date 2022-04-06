@@ -60,3 +60,9 @@ export const Icon = styled(MaterialIcons)`
     font-size: ${RFValue(25)}px;
 
 `;
+
+export const HighlightCards = styled.ScrollView.attrs({
+    horizontal: true,
+    showsHorizontalScrollIndicator: false,
+    contentContainerStyle: { paddingLeft: 12 }
+})``;
