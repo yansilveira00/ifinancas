@@ -35,9 +35,24 @@ export function Home() {
       </Header>
 
       <HighlightCards>
-        <HighlightCard />
-        <HighlightCard />
-        <HighlightCard />
+        <HighlightCard 
+        title='Entrada'
+        amount='R$ 600,00'
+        lastTransaction='Última entrada dia 27 de fevereiro'
+        type='income'
+        />
+        <HighlightCard 
+        title='Saída'
+        amount='R$ 484,50'
+        lastTransaction='Última saída dia 12 de março'
+        type='expense'
+        />
+        <HighlightCard 
+        title='Total'
+        amount='R$ 115,50'
+        lastTransaction='Último total dia 13 de março'
+        type='total'
+        />
       </HighlightCards>
     </Container>
   );

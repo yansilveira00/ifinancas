@@ -1,6 +1,10 @@
-import styled from "styled-components/native";
-import { SimpleLineIcons } from '@expo/vector-icons';
+import styled, { css} from "styled-components/native";
+import { SimpleLineIcons, FontAwesome } from '@expo/vector-icons';
 import { RFValue } from "react-native-responsive-fontsize";
+
+interface TypeProps {
+    type: 'income' | 'expense' | 'total';
+}
 
 export const Container = styled.View`
     background-color: ${({ theme }) => theme.colors.shape};
@@ -23,8 +27,22 @@ export const Title = styled.Text`
     color: ${({ theme }) => theme.colors.incomeTitle};
 `;
 
-export const Icon = styled(SimpleLineIcons)`
+export const Icon = styled(SimpleLineIcons)<TypeProps>`
     font-size: ${RFValue(36)}px;
+
+    ${(props) => props.type === 'income' && css`
+        color: ${({ theme }) => theme.colors.income};
+    `}
+
+    ${(props) => props.type === 'expense' && css`
+        color: ${({ theme }) => theme.colors.expense};
+    `}
+`;
+
+export const IconTotal = styled(FontAwesome)<TypeProps>`
+    font-size: ${RFValue(36)}px;
+    color: ${({ theme }) => theme.colors.primary};
+
 `;
 
 export const Footer = styled.View``;
@@ -34,7 +52,7 @@ export const Amount = styled.Text`
     font-size: ${RFValue(30)}px;
     color: ${({ theme }) => theme.colors.valueCard};
 
-    margin-top: ${RFValue(20)}px;;
+    margin-top: ${RFValue(0)}px;;
 `;
 
 export const LastTransaction = styled.Text`
