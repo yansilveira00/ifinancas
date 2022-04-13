@@ -14,6 +14,8 @@ export default {
         expense: '#EA4335',
         lastTransaction: '#5E5E92',
 
+        descTransaction: '#333333',
+
     },
     fonts: {
         regular: 'Roboto_400Regular',

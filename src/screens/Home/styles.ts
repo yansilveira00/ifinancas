@@ -72,3 +72,15 @@ export const HighlightCards = styled.ScrollView.attrs({
     position: absolute;
     margin-top: ${RFValue(113) + getStatusBarHeight()}px;
 `;
+
+export const Transactions = styled.View`
+    flex: 1;
+    padding: 0 15px;
+    margin-top: ${RFValue(13)}px;
+`;
+
+export const Title = styled.Text`
+    color: ${({ theme }) => theme.colors.title};
+    font-size: ${RFValue(35)}px;
+    font-family: ${({ theme }) => theme.fonts.bold};
+`;
