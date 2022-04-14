@@ -19,6 +19,15 @@ import { HighlightCard } from '../../components/HighlightCard';
 import { TransactionCard } from '../../components/TransactionCard';
 
 export function Home() {
+  const transactionData = {
+    title: ' Supermercado',
+    amount: '  -R$149,00',
+    category: {
+      icon: 'food',
+      name: 'Alimentação'
+    },
+    date: '12/03/2022, 20:00'
+  }
   return (
     <Container>
       <Header>
@@ -59,7 +68,8 @@ export function Home() {
 
       <Transactions>
         <Title>Gastos Recentes</Title>
-        <TransactionCard />
+
+        <TransactionCard data={transactionData}/>
       </Transactions>
     </Container>
   );

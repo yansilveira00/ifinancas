@@ -4,7 +4,6 @@ import styled from 'styled-components/native';
 
 import { MaterialIcons } from '@expo/vector-icons';
 
-
 export const Container = styled.View`
     flex: 1;
     background-color: ${({ theme }) => theme.colors.background};
@@ -24,7 +23,6 @@ export const ContentWrapper = styled.View`
     padding: 0 12px;
     flex-direction: row;
     margin-top: ${getStatusBarHeight() + RFValue(23)}px;
-
     align-items: center;
     justify-content: space-between;
 `;
@@ -60,7 +58,6 @@ export const UserName = styled.Text`
 export const Icon = styled(MaterialIcons)`
     color: ${({ theme }) => theme.colors.shape};
     font-size: ${RFValue(25)}px;
-
 `;
 
 export const HighlightCards = styled.ScrollView.attrs({

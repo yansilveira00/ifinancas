@@ -44,6 +44,8 @@ export function HighlightCard({
                 <Amount>{amount}</Amount>
                 <LastTransaction>{lastTransaction}</LastTransaction>
             </Footer>
+            
         </Container>
+        
     );
 }
