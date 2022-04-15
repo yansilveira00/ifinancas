@@ -36,13 +36,33 @@ export function Home() {
   },
   {
     id: '2',
-    title: ' Supermercado',
-    amount: '  -R$149,00',
+    title: ' Farmacia',
+    amount: '  -R$20,00',
     category: {
-      icon: 'food',
-      name: 'Alimentação'
+      icon: 'pill',
+      name: 'Medicametos'
     },
-    date: '12/03/2022, 20:00'
+    date: '12/03/2022, 11:10 '
+  },
+  {
+    id: '3',
+    title: ' Aluguel',
+    amount: '  -R$140,00',
+    category: {
+      icon: 'home',
+      name: 'Aluguel'
+    },
+    date: '11/03/2022, 20:45'
+  },
+  {
+    id: '4',
+    title: ' Academia',
+    amount: '  -R$55,00',
+    category: {
+      icon: 'heart',
+      name: 'Saúde'
+    },
+    date: '11/03/2022, 22:00 '
   },
 ];
   return (
