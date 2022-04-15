@@ -4,6 +4,9 @@ import styled from 'styled-components/native';
 
 import { MaterialIcons } from '@expo/vector-icons';
 
+import { FlatList, FlatListProps } from 'react-native'
+import { dataListProps } from '.';
+
 export const Container = styled.View`
     flex: 1;
     background-color: ${({ theme }) => theme.colors.background};
@@ -81,3 +84,5 @@ export const Title = styled.Text`
     font-size: ${RFValue(35)}px;
     font-family: ${({ theme }) => theme.fonts.bold};
 `;
+export const TransactionList = styled(
+    FlatList as new(props: FlatListProps<dataListProps>)=> FlatList<dataListProps>)``;

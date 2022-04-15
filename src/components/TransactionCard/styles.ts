@@ -51,5 +51,3 @@ export const Date = styled.Text`
     color: ${({ theme }) => theme.colors.title};
     margin-left: 70px;
 `;
-
-export const TransactionsList = styled.FlatList``;

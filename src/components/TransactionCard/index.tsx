@@ -13,14 +13,14 @@ interface Category{
     icon: string;
     
 }
-interface TransactionProps{
+export interface TransactionCardProps{
     title: string;
     amount: string;
     category: Category;
     date: string;
 }
 interface Props{
-    data: TransactionProps;
+    data: TransactionCardProps;
 }
 export function TransactionCard({data}:Props) {
     return (
