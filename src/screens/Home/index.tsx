@@ -26,8 +26,9 @@ export function Home() {
   const transactionData: dataListProps[] = [
     {
     id: '1',
+    type: 'expense',
     title: ' Supermercado',
-    amount: '  -R$149,00',
+    amount: ' R$149,00',
     category: {
       icon: 'food',
       name: 'Alimentação'
@@ -36,8 +37,9 @@ export function Home() {
   },
   {
     id: '2',
+    type: 'expense',
     title: ' Farmacia',
-    amount: '  -R$20,00',
+    amount: ' R$20,00',
     category: {
       icon: 'pill',
       name: 'Medicametos'
@@ -46,24 +48,27 @@ export function Home() {
   },
   {
     id: '3',
-    title: ' Aluguel',
-    amount: '  -R$140,00',
-    category: {
-      icon: 'home',
-      name: 'Aluguel'
-    },
-    date: '11/03/2022, 20:45'
-  },
-  {
-    id: '4',
+    type: 'expense',
     title: ' Academia',
-    amount: '  -R$55,00',
+    amount: ' R$55,00',
     category: {
       icon: 'heart',
       name: 'Saúde'
     },
     date: '11/03/2022, 22:00 '
   },
+  {
+    id: '4',
+    type: 'expense',
+    title: ' Aluguel',
+    amount: ' R$140,00',
+    category: {
+      icon: 'home',
+      name: 'Aluguel'
+    },
+    date: '11/03/2022, 20:45'
+  },
+
 ];
   return (
     <Container>
