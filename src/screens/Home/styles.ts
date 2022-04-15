@@ -85,4 +85,7 @@ export const Title = styled.Text`
     font-family: ${({ theme }) => theme.fonts.bold};
 `;
 export const TransactionList = styled(
-    FlatList as new(props: FlatListProps<dataListProps>)=> FlatList<dataListProps>)``;
+    FlatList as new(props: FlatListProps<dataListProps>)=> FlatList<dataListProps>).attrs({
+        showsVerticalScrollIndicator: false
+    }
+    )``;

@@ -2,6 +2,10 @@ import styled, { css} from "styled-components/native";
 import { MaterialCommunityIcons, FontAwesome } from '@expo/vector-icons';
 import { RFValue } from "react-native-responsive-fontsize";
 
+interface TransactionProps{
+    type: 'income' | 'expense';
+}
+
 export const Container = styled.View`
     background-color: ${({ theme }) => theme.colors.shape};
     padding: 15px 25px;
@@ -13,10 +17,11 @@ export const Title = styled.Text`
     color: ${({ theme }) => theme.colors.title};
 `;
 
-export const Amount = styled.Text`
+export const Amount = styled.Text<TransactionProps>`
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${RFValue(18)}px;
-    color: ${({ theme }) => theme.colors.expense};
+    color: ${({ theme, type }) => 
+      type === 'income' ? theme.colors.income : theme.colors.expense};
     margin-top: 2px;
 `;
 
