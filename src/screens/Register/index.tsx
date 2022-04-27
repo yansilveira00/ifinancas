@@ -1,4 +1,5 @@
 import React from 'react';
+import { Input } from '../../components/forms/input';
 
 import { 
     Container,
@@ -10,7 +11,15 @@ import {
 export function Register(){
     return(
         <Container>
-            <Title>Cadastro</Title>
+            <Header>
+                <Title>Cadastro</Title>
+            </Header>
+
+            <Input 
+                placeholder='None'
+            />
         </Container>
+
+        
     );
 }
