@@ -5,7 +5,10 @@ export const Container = styled.View `
     background-color: ${({ theme }) => theme.colors.background};
     flex: 1;
 `;
-
+export const Form = styled.View `
+    flex: 1;
+    padding: 24px;
+`;
 export const Header = styled.View `
     width: 100%;
     height: ${RFValue(16)}px;
