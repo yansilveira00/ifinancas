@@ -16,7 +16,10 @@ export function Register(){
             </Header>
 
             <Input 
-                placeholder='None'
+                placeholder='Nome'
+            />
+            <Input 
+                placeholder='Preço'
             />
         </Container>
 
