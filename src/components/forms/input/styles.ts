@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.TextInput`
-    background-color: ${({ theme }) => theme.colors.shape};
+    background-color: ${({ theme }) => theme.colors.cinza};
     border-radius: 5px;
 
     color: ${({ theme }) => theme.colors.title};

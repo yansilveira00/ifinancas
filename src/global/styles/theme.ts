@@ -7,6 +7,7 @@ export default {
         text: '#12202',
         header: '#240784',
         background: '#FFFFFF',
+        cinza: '#F1EDED',
 
         incomeTitle: '#50A0A6',
         income: '#00C689',
