@@ -23,7 +23,9 @@ export const Amount = styled.Text<TransactionProps>`
     color: ${({ theme, type }) => 
       type === 'income' ? theme.colors.income : theme.colors.expense};
     margin-top: 2px;
-`;
+    flex-direction: row;
+    justify-content: flex-end;
+    `;
 
 export const Footer = styled.View`
     flex-direction: row;

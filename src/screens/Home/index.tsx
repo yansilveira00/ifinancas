@@ -38,11 +38,11 @@ export function Home() {
   {
     id: '2',
     type: 'expense',
-    title: ' Farmacia',
+    title: ' Farmácia',
     amount: ' R$20,00',
     category: {
       icon: 'pill',
-      name: 'Medicametos'
+      name: 'Medicamentos'
     },
     date: '12/03/2022, 11:10 '
   },
