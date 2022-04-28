@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import AppLoading from 'expo-app-loading';
 
 import { ThemeProvider } from 'styled-components';
+import { NavigationContainer } from '@react-navigation/native';
 
 import { 
   useFonts,
@@ -11,10 +12,8 @@ import {
   Roboto_400Regular 
 } from '@expo-google-fonts/roboto';
 
-import { Home } from './src/screens/Home';
-import { Register } from './src/screens/Register';
-
 import theme from './src/global/styles/theme';
+import { AppRoutes } from './src/routs/app.routs';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -29,8 +28,10 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-    <StatusBar style="auto" />
-      <Register />
+      <StatusBar style="auto" />
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
     </ThemeProvider>
   );
 }
